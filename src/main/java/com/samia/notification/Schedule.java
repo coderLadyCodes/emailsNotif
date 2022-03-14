@@ -9,7 +9,7 @@ public class Schedule {
     @Autowired
     private EmailSending emailSending;
 
-   // @Scheduled(cron = "0 0 12 1 * ?")
+   // @Scheduled(cron = "0 0 12 1 * ?") once a month, first day of each month an email will be sent
     @Scheduled(cron = "0 * * ? * *")
     public void scheduling() {
     emailSending.sendEmail("creativegirl@outlook.fr", "Notification pour l'actualisation de  Pole emploi de la part de Samia",

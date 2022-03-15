@@ -13,7 +13,7 @@ public class NotificationControlller {
     @Autowired
     private EmailSending emailSending;
 
-    @GetMapping("/notifs-emails.herokuapp.com")
+    @GetMapping("/notifs")
      public String helloWorld() {
          return "hello";
      }

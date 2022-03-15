@@ -13,7 +13,7 @@ public class NotificationControlller {
     @Autowired
     private EmailSending emailSending;
 
-    @GetMapping("/hello")
+    @GetMapping("/")
      public String helloWorld() {
          return "hello";
      }

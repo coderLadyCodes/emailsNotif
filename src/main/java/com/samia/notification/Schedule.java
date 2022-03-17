@@ -10,8 +10,8 @@ public class Schedule {
     private EmailSending emailSending;
 
 
-    // @Scheduled(cron = "0 * * ? * *") once every minute
-    @Scheduled(cron = "0 0 12 1 * ?") // once a month, first day of each month
+    @Scheduled(cron = "0 * * ? * *")
+    //@Scheduled(cron = "0 0 12 1 * ?") // once a month, first day of each month
     public void scheduling() {
     emailSending.sendEmail("creativegirl@outlook.fr", "Notification pour l'actualisation de  Pole emploi de la part de Samia",
             "Bonjour,\n" +

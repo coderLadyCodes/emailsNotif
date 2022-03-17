@@ -13,6 +13,9 @@ public class NotificationControlller {
     @Autowired
     private EmailSending emailSending;
 
+    @Autowired
+    private Configs configs;
+
     @GetMapping("/")
      public String helloWorld() {
          return "hello";
